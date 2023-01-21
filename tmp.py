@@ -8,3 +8,4 @@ class Event(models.Model):
     contact = models.EmailField()
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='events')
     location = models.CharField(max_length=400)
+ 
